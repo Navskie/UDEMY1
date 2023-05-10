@@ -29,7 +29,13 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        // alert
+        $notification = array(
+            'message' => 'Welcome to Uptimised HRIS',
+            'alert-type' => 'success',
+        );
+
+        return redirect()->intended(RouteServiceProvider::HOME)->with($notification);
     }
 
     /**
