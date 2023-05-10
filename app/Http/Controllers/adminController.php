@@ -93,5 +93,5 @@ class adminController extends Controller
 
             return redirect()->back();
         }
-    }
+    } // END METHOD
 }
