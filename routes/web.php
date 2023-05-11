@@ -16,7 +16,7 @@ use App\Http\Controllers\adminController;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('frontend.main_master');
 });
 
 Route::get('/dashboard', function () {
